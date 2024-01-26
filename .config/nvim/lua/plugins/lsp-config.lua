@@ -12,18 +12,18 @@ return {
         ensure_installed = {
           "lua_ls",
           "bashls",
-          "clangd",
-          "neocmake",
+--          "clangd",
+--          "neocmake",
           "dockerls",
           "docker_compose_language_service",
           "eslint",
           "golangci_lint_ls",
-          "groovyls",
-          "graphql",
+--          "groovyls",
+--          "graphql",
           "html",
-          "helm_ls",
+--          "helm_ls",
           "kotlin_language_server",
-          "jqls",
+--          "jqls",
           "tsserver"
         }
       })
@@ -35,18 +35,18 @@ return {
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
       lspconfig.bashls.setup({})
-      lspconfig.clangd.setup({})
-      lspconfig.neocmake.setup({})
+--      lspconfig.clangd.setup({})
+--      lspconfig.neocmake.setup({})
       lspconfig.dockerls.setup({})
       lspconfig.docker_compose_language_service.setup({})
       lspconfig.eslint.setup({})
       lspconfig.golangci_lint_ls.setup({})
-      lspconfig.groovyls.setup({})
-      lspconfig.graphql.setup({})
+--      lspconfig.groovyls.setup({})
+--      lspconfig.graphql.setup({})
       lspconfig.html.setup({})
-      lspconfig.helm_ls.setup({})
+--      lspconfig.helm_ls.setup({})
       lspconfig.kotlin_language_server.setup({})
-      lspconfig.jqls.setup({})
+--      lspconfig.jqls.setup({})
       lspconfig.tsserver.setup({})
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
